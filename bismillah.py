@@ -3,6 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
+import numpy as np
+np.bool = bool
 
 # Judul Tugas dan Nama Anggota
 st.sidebar.title('Tugas Perancangan Aplikasi Sains Data Kelompok 5')
