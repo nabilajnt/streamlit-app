@@ -27,7 +27,7 @@ tahun = st.selectbox("Tahun", list(range(2013, 2022)))
 data = pd.read_excel("datagoldar.xlsx")
 
 # Tampilkan data dalam tabel
-st.write(data)
+st.dataframe(data)
 
 # Filter data berdasarkan tahun yang dipilih
 data_tahun = data[data["tahun"] == tahun]
