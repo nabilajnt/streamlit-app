@@ -28,12 +28,6 @@ tahun = st.selectbox("Tahun", list(range(2013, 2022)))
 # Membaca dataset golongan darah dari file Excel
 data = pd.read_excel("datagoldar.xlsx")
 
-# Konversi tipe data kolom golongan_darah menjadi tipe objek
-data["golongan_darah"] = data["golongan_darah"].astype(object)
-
-# Tampilkan data dalam tabel
-st.dataframe(data)
-
 # Filter data berdasarkan tahun yang dipilih
 data_tahun = data[data["tahun"] == tahun]
 
